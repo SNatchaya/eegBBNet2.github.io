@@ -22,9 +22,78 @@ Description about our framework
 - **Source code:** [https://github.com/IoBT-VISTEC/MIN2Net](https://github.com/IoBT-VISTEC/MIN2Net)
 - **Bug reports:** [https://github.com/IoBT-VISTEC/MIN2Net/issues](https://github.com/IoBT-VISTEC/MIN2Net/issues) -->
 
-[Get started now](#getting-started){: .btn .btn-purple .fs-5 .mb-4 .mb-md-0 .mr-2}[<img src="./assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .fs-5 .mb-4 .mb-md-0 .mr-1} [Documentation](https://snatchaya.github.io/eegBBNet2.github.io/){: .btn .fs-5 .mb-4 .mb-md-0}
+[Get started now](#getting-started){: .btn .btn-purple .fs-5 .mb-4 .mb-md-0 .mr-2}[<img src="./_site/assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .fs-5 .mb-4 .mb-md-0 .mr-1} [Documentation](https://snatchaya.github.io/eegBBNet2.github.io/){: .btn .fs-5 .mb-4 .mb-md-0}
 
 ---
+
+# Getting started
+
+### Dependencies
+
+<!-- - Python==3.6.9
+- tensorflow-gpu==2.2.0
+- tensorflow-addons==0.9.1
+- scikit-learn>=0.24.1
+- wget>=3.2 -->
+- [x] Python ==
+- [x] tensorflow ==
+
+1. Create `conda`  environment with dependencies
+```bash
+$ xxx
+```
+
+### Installation:
+
+1. Using pip
+  ```bash
+  $ pip install xxx
+  ```
+2. Using the released python wheel
+  ```bash
+  ```
+
+### Tutorial
+
+<span class="fs-3">
+[<img src="./assets/images/colab_favicon.ico" width="15" height="15"> Open code in Colab](https://colab.research.google.com/drive/1IE5J0Yn10ZIhWjSatQn_QWJWZblr6tZy?usp=sharing){: .btn }
+</span>
+
+
+### Citation
+
+<!-- To cited [our paper](https://ieeexplore.ieee.org/document/9658165) -->
+
+Name
+
+```
+@ARTICLE{9658165,
+  author={Autthasan, Phairot and Chaisaen, Rattanaphon and Sudhawiyangkul, Thapanun and 
+  Kiatthaveephong, Suktipol and Rangpong, Phurin and Dilokthanakul, Nat 
+  and Bhakdisongkhram, Gun and Phan, Huy and Guan, Cuntai and 
+  Wilaiprasitporn, Theerawit},
+  journal={IEEE Transactions on Biomedical Engineering}, 
+  title={MIN2Net: End-to-End Multi-Task Learning for Subject-Independent Motor Imagery 
+  EEG Classification}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TBME.2021.3137184}}
+```
+<span class="fs-3">
+[Citation of our paper](xxx){: .btn }
+</span>
+
+### Source Code 
+
+<!-- View our Code on [<img src="./assets/images/github.png" width="20" height="20">](https://github.com/IoBT-VISTEC/MIN2Net) -->
+
+<!-- [<img src="./assets/images/github.png" width="30" height="30"> View source on GitHub](https://github.com/IoBT-VISTEC/MIN2Net){: .btn .fs-5 .mb-4 .mb-md-0 }  -->
+
+### License
+Copyright &copy; 2021-All rights reserved by [INTERFACES (BRAIN lab @ IST, VISTEC, Thailand)](https://www.facebook.com/interfaces.brainvistec).
+Distributed by an [Apache License 2.0](https://github.com/IoBT-VISTEC/MIN2Net/blob/main/LICENSE).
 
 
 
