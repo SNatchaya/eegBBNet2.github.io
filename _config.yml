@@ -29,16 +29,9 @@ github_username:  snatchaya
 permalink: pretty
 
 # Build settings
-<<<<<<< Updated upstream
-=======
-# theme: just-the-docs
->>>>>>> Stashed changes
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-feed
-
-# Set a path/url to a logo that will be displayed instead of the title
-logo: "/_site/assets/images/just-the-docs.png"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
