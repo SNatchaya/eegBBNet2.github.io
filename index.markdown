@@ -22,11 +22,11 @@ Description about our framework
 - **Source code:** [https://github.com/IoBT-VISTEC/MIN2Net](https://github.com/IoBT-VISTEC/MIN2Net)
 - **Bug reports:** [https://github.com/IoBT-VISTEC/MIN2Net/issues](https://github.com/IoBT-VISTEC/MIN2Net/issues) -->
 
-[Get started now](#getting-started){: .btn .btn-purple .fs-5 .mb-4 .mb-md-0 .mr-2}[<img src="./_site/assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .fs-5 .mb-4 .mb-md-0 .mr-1} [Documentation](https://snatchaya.github.io/eegBBNet2.github.io/){: .btn .fs-5 .mb-4 .mb-md-0}
+[Get started now](#getting-started){: .btn .btn-purple .fs-5 .mb-4 .mb-md-0 .mr-2}[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .fs-5 .mb-4 .mb-md-0 .mr-1} [Documentation](https://snatchaya.github.io/eegBBNet2.github.io/){: .btn .fs-5 .mb-4 .mb-md-0}
 
 ---
 
-# Getting started
+## Getting started
 
 ### Dependencies
 
@@ -56,7 +56,7 @@ $ xxx
 ### Tutorial
 
 <span class="fs-3">
-[<img src="./assets/images/colab_favicon.ico" width="15" height="15"> Open code in Colab](https://colab.research.google.com/drive/1IE5J0Yn10ZIhWjSatQn_QWJWZblr6tZy?usp=sharing){: .btn }
+[<img src="./images/colab_favicon.ico" width="15" height="15"> Open code in Colab](xxx){: .btn }
 </span>
 
 
@@ -67,19 +67,7 @@ $ xxx
 Name
 
 ```
-@ARTICLE{9658165,
-  author={Autthasan, Phairot and Chaisaen, Rattanaphon and Sudhawiyangkul, Thapanun and 
-  Kiatthaveephong, Suktipol and Rangpong, Phurin and Dilokthanakul, Nat 
-  and Bhakdisongkhram, Gun and Phan, Huy and Guan, Cuntai and 
-  Wilaiprasitporn, Theerawit},
-  journal={IEEE Transactions on Biomedical Engineering}, 
-  title={MIN2Net: End-to-End Multi-Task Learning for Subject-Independent Motor Imagery 
-  EEG Classification}, 
-  year={2021},
-  volume={},
-  number={},
-  pages={1-1},
-  doi={10.1109/TBME.2021.3137184}}
+@ARTICLE{xxx}
 ```
 <span class="fs-3">
 [Citation of our paper](xxx){: .btn }
