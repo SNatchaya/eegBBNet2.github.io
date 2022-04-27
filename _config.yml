@@ -21,6 +21,7 @@
 title: eeg-BBNet
 email: your-email@example.com
 description: Description in Github
+domain: "snatchaya.github.io/eegBBNet2.github.io/"
 baseurl: ""                          # the subpath of your site, e.g. /blog
 url: "https://snatchaya.github.io/eegBBNet2.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -28,7 +29,7 @@ github_username:  snatchaya
 permalink: pretty
 
 # Build settings
-remote_theme: pmarsceill/just-the-docs
+remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-feed
 
