@@ -9,6 +9,8 @@ Short description (from GitHub page)
 
 Description about our framework
 
-[Get started now](#getting-started){: .btn .btn-purple .fs-5 .mb-4 .mb-md-0 .mr-2}[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .fs-5 .mb-4 .mb-md-0 .mr-1} [Documentation](https://snatchaya.github.io/eegBBNet2.github.io/){: .btn .fs-5 .mb-4 .mb-md-0}
+- [Get started now](https://snatchaya.github.io/eegBBNet2.github.io/)
+- [<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx)
+- [Documentation](https://snatchaya.github.io/eegBBNet2.github.io/){: .btn .fs-5 .mb-4 .mb-md-0}
 
 ---
