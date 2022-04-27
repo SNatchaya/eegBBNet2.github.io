@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Home
-permalink: //snatchaya.github.io/eegBBNet2.github.io/home/
+title: pre-processing
+permalink: /
 ---
 
 # EEG-BBNet

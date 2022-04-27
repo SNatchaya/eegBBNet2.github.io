@@ -22,6 +22,6 @@ Description about our framework
 - **Source code:** [https://github.com/IoBT-VISTEC/MIN2Net](https://github.com/IoBT-VISTEC/MIN2Net)
 - **Bug reports:** [https://github.com/IoBT-VISTEC/MIN2Net/issues](https://github.com/IoBT-VISTEC/MIN2Net/issues) -->
 
-[Get started now](#getting-started){: .btn .btn-purple .fs-5 .mb-4 .mb-md-0 .mr-2}[<img src="./assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .fs-5 .mb-4 .mb-md-0 .mr-1} [Documentation](xxx){: .btn .fs-5 .mb-4 .mb-md-0}
+[Get started now](#getting-started){: .btn .btn-purple .fs-5 .mb-4 .mb-md-0 .mr-2}[<img src="./assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .fs-5 .mb-4 .mb-md-0 .mr-1} [Documentation](https://snatchaya.github.io/eegBBNet2.github.io/){: .btn .fs-5 .mb-4 .mb-md-0}
 
 ---
