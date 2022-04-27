@@ -21,7 +21,7 @@
 title: eeg-BBNet
 email: your-email@example.com
 description: Description in Github
-domain: "snatchaya.github.io/eegBBNet2.github.io/"  
+domain: "snatchaya.github.io"  
 baseurl: "/eegBBNet2.github.io/"                          # the subpath of your site, e.g. /blog
 url: "https://snatchaya.github.io/eegBBNet2.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
