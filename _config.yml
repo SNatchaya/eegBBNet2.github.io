@@ -90,7 +90,7 @@ search:
 
 aux_links:
   "View source on GitHub":
-    - "//snatchaya.github.io/eegBBNet2.github.io/"
+    - "//github.com/SNatchaya/eegBBNet2.github.io"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
