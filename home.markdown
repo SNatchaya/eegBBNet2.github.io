@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-permalink: //snatchaya.github.io/eegBBNet2.github.io//home/
+permalink: //snatchaya.github.io/eegBBNet2.github.io/home/
 ---
 
 # EEG-BBNet
