@@ -8,7 +8,7 @@ Short description (from GitHub page)
 
 Description about our framework
 
-- [Get started now](## Getting started)
+- [Get started now](#getting-started)
 - [Source code on GitHub](xxx)
 - [Documentation](https://snatchaya.github.io/eegBBNet2.github.io/)
 
