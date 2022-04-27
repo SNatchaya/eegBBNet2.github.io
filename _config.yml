@@ -32,6 +32,10 @@ twitter_username: jekyllrb
 github_username:  snatchaya
 
 # Build settings
+<<<<<<< Updated upstream
+=======
+# theme: just-the-docs
+>>>>>>> Stashed changes
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-feed
