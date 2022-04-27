@@ -8,9 +8,9 @@ Short description (from GitHub page)
 
 Description about our framework
 
-- [Get started now](https://snatchaya.github.io/eegBBNet2.github.io/)
+- [Get started now](## Getting started)
 - [Source code on GitHub](xxx)
-- [Documentation](https://snatchaya.github.io/eegBBNet2.github.io/){
+- [Documentation](https://snatchaya.github.io/eegBBNet2.github.io/)
 
 ---
 
