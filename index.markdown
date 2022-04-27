@@ -12,8 +12,8 @@ permalink: /
 Short description (from GitHub page)
 
 <!-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1IE5J0Yn10ZIhWjSatQn_QWJWZblr6tZy?usp=sharing) -->
-[![Pypi Downloads](https://img.shields.io/pypi/v/min2net?color=green&logo=pypi&logoColor=white)](https://pypi.org/project/min2net)
-[![DOI](https://img.shields.io/badge/DOI-10.1109%2FTBME.2021.3137184-blue)](https://ieeexplore.ieee.org/document/9658165)
+[![Pypi Downloads](https://img.shields.io/pypi/v/min2net?color=green&logo=pypi&logoColor=white)](xxx)
+[![DOI](https://img.shields.io/badge/DOI-10.1109%2FTBME.2021.3137184-blue)](xxx)
 
 Description about our framework
 
