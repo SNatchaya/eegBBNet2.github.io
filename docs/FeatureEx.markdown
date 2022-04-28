@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Feature extractions
+title: Feature Extractions
 nav_order: 3
 has_children: true
 ---
