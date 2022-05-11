@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Random Forest (RF)
+title: RF
 parent: Models
 nav_order: 2
 ---

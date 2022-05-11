@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Convolution Neural Network (CNN)
+title: CNN
 parent: Models
 nav_order: 3
 ---

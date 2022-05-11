@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Support Vector Machine (SVM)
+title: SVM
 parent: Models
 nav_order: 1
 ---
