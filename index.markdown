@@ -73,19 +73,11 @@ Name
 [Citation of our paper](xxx){: .btn }
 </span>
 
-### Source code: 
-
-<!-- View our Code on [<img src="./assets/images/github.png" width="20" height="20">](https://github.com/IoBT-VISTEC/MIN2Net) -->
-
-<!-- [<img src="./assets/images/github.png" width="30" height="30"> View source on GitHub](https://github.com/IoBT-VISTEC/MIN2Net){: .btn .fs-5 .mb-4 .mb-md-0 }  -->
-
-### Bug reports:
-GitHub page issue web
-
 ---
 
 ## About the project
 Copyright &copy; 2021-All rights reserved by [INTERFACES (BRAIN lab @ IST, VISTEC, Thailand)](https://www.facebook.com/interfaces.brainvistec).
+[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .fs-5 .mb-4 .mb-md-0 .mr-1}[Bur reports](https://github.com/SNatchaya/eegBBNet2.github.io/issues){: .btn }
 
 ### License
 Distributed by an [Apache License 2.0](https://github.com/IoBT-VISTEC/MIN2Net/blob/main/LICENSE).
