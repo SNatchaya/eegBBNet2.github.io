@@ -9,7 +9,7 @@ permalink: /
 # EEG-BBNet
 {: .fs-9 }
 
-Short description (from GitHub page)
+Layer-Wise Graph Convolutional Neural Networks for Brain-Based Biometrics
 
 <!-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1IE5J0Yn10ZIhWjSatQn_QWJWZblr6tZy?usp=sharing) -->
 [![Pypi Downloads](https://img.shields.io/pypi/v/min2net?color=green&logo=pypi&logoColor=white)](xxx)
@@ -28,7 +28,7 @@ Description about our framework
 
 ## Getting started
 
-### Dependencies
+### Dependencies:
 
 <!-- - Python==3.6.9
 - tensorflow-gpu==2.2.0
@@ -53,14 +53,14 @@ $ xxx
   ```bash
   ```
 
-### Tutorial
+### Tutorial:
 
 <span class="fs-3">
 [<img src="./images/colab_favicon.ico" width="15" height="15"> Open code in Colab](xxx){: .btn }
 </span>
 
 
-### Citation
+### Citation:
 
 <!-- To cited [our paper](https://ieeexplore.ieee.org/document/9658165) -->
 
@@ -73,7 +73,7 @@ Name
 [Citation of our paper](xxx){: .btn }
 </span>
 
-### Source Code 
+### Source code: 
 
 <!-- View our Code on [<img src="./assets/images/github.png" width="20" height="20">](https://github.com/IoBT-VISTEC/MIN2Net) -->
 
