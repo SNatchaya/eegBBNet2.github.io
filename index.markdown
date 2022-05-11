@@ -73,8 +73,6 @@ Name
 [Citation of our paper](xxx){: .btn }
 </span>
 
-## Source code & Bug reports
-[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .mb-4 .mb-md-0 .mr-1}[Bug reports](https://github.com/SNatchaya/eegBBNet2.github.io/issues){: .btn }
 ---
 
 ## About the project
@@ -84,5 +82,4 @@ Copyright &copy; 2021-All rights reserved by [INTERFACES (BRAIN lab @ IST, VISTE
 ### License
 Distributed by an [Apache License 2.0](https://github.com/IoBT-VISTEC/MIN2Net/blob/main/LICENSE).
 
-
-
+[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .mb-4 .mb-md-0 .mr-1}[Bug reports](https://github.com/SNatchaya/eegBBNet2.github.io/issues){: .btn }
