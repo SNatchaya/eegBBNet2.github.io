@@ -15,7 +15,8 @@ Layer-Wise Graph Convolutional Neural Networks for Brain-Based Biometrics
 [![Pypi Downloads](https://img.shields.io/pypi/v/min2net?color=green&logo=pypi&logoColor=white)](xxx)
 [![DOI](https://img.shields.io/badge/DOI-10.1109%2FTBME.2021.3137184-blue)](xxx)
 
-Description about our framework
+
+We propose a Python API and our algorithm for Brain-based biometrics, namely EEG-BBNet. We illustrate the examples of benchmark datasets, preprocessing, feature extractions, and models, including our algorithm EEG-BBNet. Finally, the API was developed to allow for benchmarking the pipeline of our proposed algorithm and traditional brain-biometric models.
 
 <!-- - **Website:** [https://min2net.github.io](https://min2net.github.io)
 - **Documentation:** [https://min2net.github.io](https://min2net.github.io)
