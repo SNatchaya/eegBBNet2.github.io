@@ -79,8 +79,15 @@ Name
 
 <!-- [<img src="./assets/images/github.png" width="30" height="30"> View source on GitHub](https://github.com/IoBT-VISTEC/MIN2Net){: .btn .fs-5 .mb-4 .mb-md-0 }  -->
 
-### License
+### Bug reports:
+GitHub page issue web
+
+---
+
+## About the project
 Copyright &copy; 2021-All rights reserved by [INTERFACES (BRAIN lab @ IST, VISTEC, Thailand)](https://www.facebook.com/interfaces.brainvistec).
+
+### License
 Distributed by an [Apache License 2.0](https://github.com/IoBT-VISTEC/MIN2Net/blob/main/LICENSE).
 
 
