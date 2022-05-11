@@ -8,5 +8,8 @@ permalink: docs/models
 
 # Models
 {: .fs-9 }
+EEG classification model, which have traditional brain-biometric models and our purpose models.
+
+[View it on GitHub](xxx){: .btn .btn-purple }
 
 

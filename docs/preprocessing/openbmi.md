@@ -9,7 +9,7 @@ nav_order: 1
 {: .no_toc }
 The OpenBMI dataset consists of 3 EEG recognition tasks, namely Motor Imagery (MI), Event-Related Potential (ERP), and Steady-State Visually Evoked Potential (SSVEP). Each dataset contains 54 healthy subjects, and each subject was recorded the EEG using a BrainAmp EEG amplifier equipped with 62 electrodes
 
-[<img src="../../images/github.png" width="15" height="15"> View it on GitHub](xxx){: .btn .mb-4 .mb-md-0 .mr-1}
+[View it on GitHub](xxx){: .btn .btn-purple }
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -19,13 +19,31 @@ The OpenBMI dataset consists of 3 EEG recognition tasks, namely Motor Imagery (M
 
 ---
 ## Datasets
+
+Data size : `(sessions × subjects × trials × EEGchannels × timesteps)`
+
 ### Motor imagery (MI)
+
+```py
+
+```
+
 ---
 ### Event-Related Potentia (ERP)
+
+```py
+
+```
 ---
 ### Steady-State Visually Evoked Potential
+
+```py
+
+```
 ---
 ## Preprocessing
 ### Bandpass filter
+Bandpass the EEG signals using the Butterworth filter with frequency range 3-40 Hz.
+
 ---
 ### Downsample

@@ -16,12 +16,7 @@ Layer-Wise Graph Convolutional Neural Networks for Brain-Based Biometrics
 [![DOI](https://img.shields.io/badge/DOI-10.1109%2FTBME.2021.3137184-blue)](xxx)
 
 
-We propose a Python API and our algorithm for Brain-based biometrics, namely EEG-BBNet. We illustrate the examples of benchmark datasets, preprocessing, feature extractions, and models, including our algorithm EEG-BBNet. Finally, the API was developed to allow for benchmarking the pipeline of our proposed algorithm and traditional brain-biometric models.
-
-<!-- - **Website:** [https://min2net.github.io](https://min2net.github.io)
-- **Documentation:** [https://min2net.github.io](https://min2net.github.io)
-- **Source code:** [https://github.com/IoBT-VISTEC/MIN2Net](https://github.com/IoBT-VISTEC/MIN2Net)
-- **Bug reports:** [https://github.com/IoBT-VISTEC/MIN2Net/issues](https://github.com/IoBT-VISTEC/MIN2Net/issues) -->
+We propose a Python API and our algorithm for Brain-based biometrics, namely **EEG-BBNet**. We illustrate the examples of benchmark datasets, preprocessing, feature extractions, and models, including our algorithm EEG-BBNet. Finally, the API was developed to allow for benchmarking the pipeline of our proposed algorithm and traditional brain-biometric models.
 
 [Get started now](#getting-started){: .btn .btn-purple .fs-5 .mb-4 .mb-md-0 .mr-2}[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .fs-5 .mb-4 .mb-md-0 .mr-1} [Documentation](https://snatchaya.github.io/eegBBNet2.github.io/){: .btn .fs-5 .mb-4 .mb-md-0}
 

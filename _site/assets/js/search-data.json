@@ -1,8 +1,164 @@
 {"0": {
+    "doc": "Feature Extractions",
+    "title": "Feature Extraction",
+    "content": "xxxx . View it on GitHub . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/FeatureEx/#feature-extraction",
+    "relUrl": "/docs/FeatureEx/#feature-extraction"
+  },"1": {
+    "doc": "Feature Extractions",
+    "title": "PSD + AR",
+    "content": ". ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/FeatureEx/#psd--ar",
+    "relUrl": "/docs/FeatureEx/#psd--ar"
+  },"2": {
+    "doc": "Feature Extractions",
+    "title": "Feature Extractions",
+    "content": " ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/FeatureEx/",
+    "relUrl": "/docs/FeatureEx/"
+  },"3": {
     "doc": "About",
     "title": "About",
     "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/about/",
     "relUrl": "/about/"
+  },"4": {
+    "doc": "CNN + LSTM",
+    "title": "CNN and Long Short-Term Mamory (LSTM)",
+    "content": " ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/cnn+lstm/#cnn-and-long-short-term-mamory-lstm",
+    "relUrl": "/docs/models/cnn+lstm/#cnn-and-long-short-term-mamory-lstm"
+  },"5": {
+    "doc": "CNN + LSTM",
+    "title": "CNN + LSTM",
+    "content": " ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/cnn+lstm/",
+    "relUrl": "/docs/models/cnn+lstm/"
+  },"6": {
+    "doc": "CNN",
+    "title": "Convolution Neural Network (CNN)",
+    "content": " ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/cnn/#convolution-neural-network-cnn",
+    "relUrl": "/docs/models/cnn/#convolution-neural-network-cnn"
+  },"7": {
+    "doc": "CNN",
+    "title": "CNN",
+    "content": " ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/cnn/",
+    "relUrl": "/docs/models/cnn/"
+  },"8": {
+    "doc": "EEG-BBNet",
+    "title": "EEG-BBNet",
+    "content": "EEG-BBNet is comprised of CNN, GCN, and fully connected layers, sequentially. View it on GitHub . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/eeg-bbnet/",
+    "relUrl": "/docs/models/eeg-bbnet/"
+  },"9": {
+    "doc": "EEG-BBNet",
+    "title": "Table of contents",
+    "content": ". | Model class . | Build method | Fit method | Predict method | . | Example | . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/eeg-bbnet/#table-of-contents",
+    "relUrl": "/docs/models/eeg-bbnet/#table-of-contents"
+  },"10": {
+    "doc": "EEG-BBNet",
+    "title": "Model class",
+    "content": "Configures the model for training. Based on tf.keras.Model. our library . Arguments . | Arguments | Description | Default | . | ok | good swedish fish | nice | . | out of stock | good and plenty | nice | . | ok | good oreos | hmm | . | ok | good zoute drop | yumm | . Build method . Build the model that …. EEGBBNet.build() . Fit method . EEGBBNet.fit(X_train, y_train, X_val, y_val) . Arguments . | Arguments | Description | . | X_train | ndarray Training EEG signals. shape (#trial, #depth, #time_point, #channel) | . | y_train | ndarray Label of training set. shape (#trial) | . | X_val | ndarray Validation EEG signals. shape (#trial, #depth, #time_point, #channel) | . | y_val | ndarray Label of validation set. shape (#trial) | . Predict method . EEGBBNet.predict(X_test, y_test) . Arguments . | Arguments | Description | . | X_test | ndarray Testing EEG signals. shape (#trial, #depth, #time_point, #channel) | . | y_test | ndarray Label of test set. shape (#trial) | . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/eeg-bbnet/#model-class",
+    "relUrl": "/docs/models/eeg-bbnet/#model-class"
+  },"11": {
+    "doc": "EEG-BBNet",
+    "title": "Example",
+    "content": "from EEGBBNet.model import EEGBBNet import numpy as np model = EEGBBNet(input_shape=(1, 400, 20), num_class=2, monitor='val_loss', shuffle=True) model.fit(X_train, y_train, X_val, y_val) Y, evaluation = model.predict(X_test, y_test) . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/eeg-bbnet/#example",
+    "relUrl": "/docs/models/eeg-bbnet/#example"
+  },"12": {
+    "doc": "Home",
+    "title": "EEG-BBNet",
+    "content": "Layer-Wise Graph Convolutional Neural Networks for Brain-Based Biometrics . We propose a Python API and our algorithm for Brain-based biometrics, namely EEG-BBNet. We illustrate the examples of benchmark datasets, preprocessing, feature extractions, and models, including our algorithm EEG-BBNet. Finally, the API was developed to allow for benchmarking the pipeline of our proposed algorithm and traditional brain-biometric models. Get started now Source code on GitHub Documentation . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/#eeg-bbnet",
+    "relUrl": "/#eeg-bbnet"
+  },"13": {
+    "doc": "Home",
+    "title": "Getting started",
+    "content": "Dependencies . | Python == | tensorflow == | . | Create conda environment with dependencies $ xxx . | . Installation . | Using pip $ pip install xxx . | Using the released python wheel . | . Tutorial . Open code in Colab . Citation . Name . @ARTICLE{xxx} . Citation of our paper . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/#getting-started",
+    "relUrl": "/#getting-started"
+  },"14": {
+    "doc": "Home",
+    "title": "About the project",
+    "content": "Copyright © 2021-All rights reserved by INTERFACES (BRAIN lab @ IST, VISTEC, Thailand). License . Distributed by an Apache License 2.0. Source code on GitHubBug reports . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/#about-the-project",
+    "relUrl": "/#about-the-project"
+  },"15": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/",
+    "relUrl": "/"
+  },"16": {
+    "doc": "Models",
+    "title": "Models",
+    "content": "EEG classification model, which have traditional brain-biometric models and our purpose models. View it on GitHub . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/models",
+    "relUrl": "/docs/models"
+  },"17": {
+    "doc": "OpenBMI dataset",
+    "title": "OpenBMI dataset",
+    "content": "The OpenBMI dataset consists of 3 EEG recognition tasks, namely Motor Imagery (MI), Event-Related Potential (ERP), and Steady-State Visually Evoked Potential (SSVEP). Each dataset contains 54 healthy subjects, and each subject was recorded the EEG using a BrainAmp EEG amplifier equipped with 62 electrodes . View it on GitHub . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/openbmi/",
+    "relUrl": "/docs/preprocessing/openbmi/"
+  },"18": {
+    "doc": "OpenBMI dataset",
+    "title": "Table of contents",
+    "content": ". | Datasets . | Motor imagery (MI) | Event-Related Potentia (ERP) | Steady-State Visually Evoked Potential | . | Preprocessing . | Bandpass filter | Downsample | . | . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/openbmi/#table-of-contents",
+    "relUrl": "/docs/preprocessing/openbmi/#table-of-contents"
+  },"19": {
+    "doc": "OpenBMI dataset",
+    "title": "Datasets",
+    "content": "Data size : (sessions × subjects × trials × EEGchannels × timesteps) . Motor imagery (MI) . Event-Related Potentia (ERP) . Steady-State Visually Evoked Potential . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/openbmi/#datasets",
+    "relUrl": "/docs/preprocessing/openbmi/#datasets"
+  },"20": {
+    "doc": "OpenBMI dataset",
+    "title": "Preprocessing",
+    "content": "Bandpass filter . Bandpass the EEG signals using the Butterworth filter with frequency range 3-40 Hz. Downsample . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/openbmi/#preprocessing",
+    "relUrl": "/docs/preprocessing/openbmi/#preprocessing"
+  },"21": {
+    "doc": "Preprocessing",
+    "title": "Prepocessing",
+    "content": "Conduct the algorithm using OpenBMI EEG dataset, and analysis the datas in offline phase. Bandpass using Butterworth filter and downsample the signals. ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing#prepocessing",
+    "relUrl": "/docs/preprocessing#prepocessing"
+  },"22": {
+    "doc": "Preprocessing",
+    "title": "Preprocessing",
+    "content": " ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing",
+    "relUrl": "/docs/preprocessing"
+  },"23": {
+    "doc": "RF",
+    "title": "Random Forest (RF)",
+    "content": " ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/rf/#random-forest-rf",
+    "relUrl": "/docs/models/rf/#random-forest-rf"
+  },"24": {
+    "doc": "RF",
+    "title": "RF",
+    "content": " ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/rf/",
+    "relUrl": "/docs/models/rf/"
+  },"25": {
+    "doc": "SVM",
+    "title": "Support Vector Machine (SVM)",
+    "content": " ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/svm/#support-vector-machine-svm",
+    "relUrl": "/docs/models/svm/#support-vector-machine-svm"
+  },"26": {
+    "doc": "SVM",
+    "title": "SVM",
+    "content": " ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/svm/",
+    "relUrl": "/docs/models/svm/"
   }
 }
