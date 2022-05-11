@@ -8,4 +8,4 @@ permalink: docs/preprocessing
 
 # Prepocessing
 {: .fs-9 }
-Conduct the algorithm using OpenBMI EEG dataset, which consists of three EEG recognition task, and analysis the datas in offline phase. Bandpass using Butterworth filter and downsample the signals.  
+Conduct the algorithm using OpenBMI EEG dataset, and analysis the datas in offline phase. Bandpass using Butterworth filter and downsample the signals.  
