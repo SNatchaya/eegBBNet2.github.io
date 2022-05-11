@@ -28,7 +28,7 @@ Description about our framework
 
 ## Getting started
 
-### Dependencies:
+### Dependencies
 
 <!-- - Python==3.6.9
 - tensorflow-gpu==2.2.0
@@ -43,7 +43,7 @@ Description about our framework
 $ xxx
 ```
 
-### Installation:
+### Installation
 
 1. Using pip
   ```bash
@@ -53,14 +53,14 @@ $ xxx
   ```bash
   ```
 
-### Tutorial:
+### Tutorial
 
 <span class="fs-3">
 [<img src="./images/colab_favicon.ico" width="15" height="15"> Open code in Colab](xxx){: .btn }
 </span>
 
 
-### Citation:
+### Citation
 
 <!-- To cited [our paper](https://ieeexplore.ieee.org/document/9658165) -->
 
@@ -73,11 +73,13 @@ Name
 [Citation of our paper](xxx){: .btn }
 </span>
 
+## Source code & Bug reports
+[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .mb-4 .mb-md-0 .mr-1}[Bur reports](https://github.com/SNatchaya/eegBBNet2.github.io/issues){: .btn }
 ---
 
 ## About the project
 Copyright &copy; 2021-All rights reserved by [INTERFACES (BRAIN lab @ IST, VISTEC, Thailand)](https://www.facebook.com/interfaces.brainvistec).
-[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .fs-5 .mb-4 .mb-md-0 .mr-1}[Bur reports](https://github.com/SNatchaya/eegBBNet2.github.io/issues){: .btn }
+
 
 ### License
 Distributed by an [Apache License 2.0](https://github.com/IoBT-VISTEC/MIN2Net/blob/main/LICENSE).
