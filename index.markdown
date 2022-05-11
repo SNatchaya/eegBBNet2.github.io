@@ -74,7 +74,7 @@ Name
 </span>
 
 ## Source code & Bug reports
-[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .mb-4 .mb-md-0 .mr-1}[Bur reports](https://github.com/SNatchaya/eegBBNet2.github.io/issues){: .btn }
+[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .mb-4 .mb-md-0 .mr-1}[Bug reports](https://github.com/SNatchaya/eegBBNet2.github.io/issues){: .btn }
 ---
 
 ## About the project
