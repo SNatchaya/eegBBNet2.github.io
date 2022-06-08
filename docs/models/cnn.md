@@ -8,7 +8,7 @@ nav_order: 3
 # Convolution Neural Network (CNN)
 {: .no_toc }
 
-[<img src="https://github.com/SNatchaya/eegBBNet2.github.io/blob/32b0f65d3c9e79caf5633cbb3cc7a04181456b95/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
+[<img src="https://min2net.github.io/assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -22,22 +22,22 @@ nav_order: 3
 The configuration of this mathod is shown below. The implementation is based on [tf.keras.Model](https://www.tensorflow.org/api_docs/python/tf/keras/Model).
 
 ```py
-EEGBBNet.model.CNNLSTM()
+EEGBBNet.model.CNN()
 ```
 **Arguments** 
 
 | Arguments | Description | Default|
 |:----------|:------------|:-------|
-| ip_shape  | `tuple` of integers. The input. **Note** : The input shape depends on the data shape. | `(#EEGchannels, #timesteps, 1)` |
+| ip_shape  | `tuple` of integers. **Note** : The input shape depends on the data shape. | `(EEGchannel, timestep, 1)` |
 
 ---
 
 ### Build model
 (?) Build the model that group layers into an object with training and inference features.
 
-``py
-CNNLSTM.build()
-``
+```py
+CNN.build()
+```
 
 **Return**: Model `(tf.keras.Model)` : Model object
 
@@ -58,9 +58,9 @@ CNNLSTM.fit(X_train,
 
 | Arguments | Description | Shape |
 |:---|:----|:---|
-|X_train   | `ndarray` Training EEG signals.                  | `(#subjects x #trials, #EEGchannels, #timesteps, 1)`  |
-|y_train   | `ndarray` Class label of training set.           | `(#subjects x #trials,)`                              |
-|validation_data    | `ndarray` Validation EEG signals     | X_val: `(#subjects x #trials, #EEGchannels, #timesteps, 1)`, y_val: `(#subjects x #trials,)` |
+|X_train   | `ndarray` Training EEG signals.                  | `(subject*trial, EEGchannel, timestep, 1)`   |
+|y_train   | `ndarray` Class label of training set.           | `(subject*trial, )`                           |
+|validation_data    | `ndarray` Validation EEG signals     | X_val: `(subject*trial, EEGchannel, timestep, 1)`, y_val: `(subject*trial, )` |
 |batch_size         | `int` or `None` Number of samples per gradient update.    | - |
 |epochs             | `int` Number of epochs to train the model.                | - |
 |**kwargs           | Keyword argument to pass into the function for replacing the variables of the model such as `model_name`,`loss`, `optimizer`, `metrics`| - | 
@@ -72,17 +72,17 @@ CNNLSTM.fit(X_train,
 Return the output predictions and evaluation on samples in testing set *(X_test, y_test)*. This method is implemented based on [tf.keras.Model.predict()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#predict) and [tf.keras.Model.evaluate()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#evaluate)
 
 ```py
-CNNLSTM.evaluation( X_test, 
-                    y_test,
-                    batch_size = batch_size)
+CNNLSTM.evaluation(X_test, 
+                   y_test,
+                   batch_size = batch_size)
 ```
  
  **Arguments**
 
 | Arguments | Description | Shape |
 |:---|:----|:---|
-|X_test     | `ndarray` Testing EEG signals.            | `(#subjects x #trials, #EEGchannels, #timesteps, 1)`  |
-|y_test     | `ndarray` Class labels of testing set.    | `(#subjetcs x #trials,)`                              |
+|X_test     | `ndarray` Testing EEG signals.            | `(subject*trial, EEGchannel, timestep, 1)`  |
+|y_test     | `ndarray` Class labels of testing set.    | `(subject*trial, )`                          |
 |batch_size         | `int` or `None` Number of samples per batch of computation.     | - |
 
 **Return** : the loss value & metrics values for the model in test mode.
@@ -92,16 +92,16 @@ CNNLSTM.evaluation( X_test,
 ## Example
 
 ```py
-from EEGBBNet.model import CNNLSTM
+from EEGBBNet.model import CNN
 import numpy as np
 
-model = CNNLSTM(ip_shape=(62, 1000, 1))
-model.fit(  X_train,
-            y_train,
-            validation_data=(X_val, y_val),
-            batch_size=32,
-            epochs=100)
-y_pred, history = model.evaluation( X_test,
-                                    y_test,
-                                    batch_size=32)
+model = CNN(ip_shape=(62, 1000, 1))
+model.fit(X_train,
+          y_train,
+          validation_data=(X_val, y_val),
+          batch_size=32,
+          epochs=100)
+y_pred, history = model.evaluation(X_test,
+                                   y_test,
+                                   batch_size=32)
 ```

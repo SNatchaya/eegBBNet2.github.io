@@ -2,7 +2,7 @@
 layout: default
 title: EEG-BBNet
 parent: Models
-nav_order: 5
+nav_order: 6
 ---
 
 # EEG-BBNet
@@ -10,7 +10,7 @@ nav_order: 5
 
 **EEG-BBNet** is comprised of CNN, GCN, and fully connected layers, sequentially.
 
-[View it on GitHub](xxx){: .btn .btn-purple }
+[<img src="https://min2net.github.io/assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -83,8 +83,15 @@ EEGBBNet.predict(X_test,
 from EEGBBNet.model import EEGBBNet
 import numpy as np
 
-model = EEGBBNet(input_shape=(1, 400, 20), num_class=2, monitor='val_loss', shuffle=True)
-model.fit(X_train, y_train, X_val, y_val)
+model = EEGBBNet(input_shape=(1, 400, 20), 
+                 num_class=2, 
+                 monitor='val_loss', 
+                 shuffle=True)
+model.fit(X_train, 
+          y_train, 
+          X_val, 
+          y_val)
 
-Y, evaluation = model.predict(X_test, y_test)
+Y, evaluation = model.predict(X_test, 
+                              y_test)
 ```
