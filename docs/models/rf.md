@@ -53,7 +53,7 @@ SVM.fit(X_train,
 ---
 
 ### Predict method
-Return the output predictions and classification accuracy on samples in testing set *(X_test, y_test)*.
+Return the output predictions and evaluation on samples in testing set *(X_test, y_test)*.
 
 ```py
 RF.predict( X_test, 

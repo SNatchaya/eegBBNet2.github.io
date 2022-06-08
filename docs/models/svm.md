@@ -33,7 +33,7 @@ EEGBBNet.model.SVM()
 ---
 
 ### Fit method
-Fit the SVM model according to the given training set. 
+Fit the SVM model according to the given training set *(X_train, y_train)*. 
 
 ```py
 SVM.fit(X_train,
@@ -50,7 +50,7 @@ SVM.fit(X_train,
 ---
 
 ### Predict method
-Return the output predictions and classification accuracy on samples in testing set.
+Return the output predictions and evaluation on samples in testing set *(X_test, y_test)*.
 
 ```py
 SVM.predict(X_test, 
