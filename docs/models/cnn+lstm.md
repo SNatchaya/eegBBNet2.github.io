@@ -8,7 +8,7 @@ nav_order: 4
 # CNN and Long Short-Term Mamory (LSTM)
 {: .no_toc }
 
-[<img src="https://github.com/SNatchaya/eegBBNet2.github.io/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
+[<img src="https://github.com/SNatchaya/eegBBNet2.github.io/blob/32b0f65d3c9e79caf5633cbb3cc7a04181456b95/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -32,7 +32,7 @@ EEGBBNet.model.CNNLSTM()
 
 ---
 
-## Build model
+### Build model
 (?) Build the model that group layers into an object with training and inference features.
 
 ``py
@@ -43,12 +43,12 @@ CNNLSTM.build()
 
 ---
 
-## Fit model
+### Fit model
 Fit the CNN+LSTM model according to the given training set *(X_train, y_train)* and validation set *(X_val, y_val)*. This method is implemented based on [tf.keras.Model.fit()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit).
 
 ```py
-CNNLSTM.fit(x = X_train,
-            y = y_train,
+CNNLSTM.fit(X_train,
+            y_train,
             validation_data = (X_val, y_val),
             batch_size = batch_size,
             epochs = epochs)
@@ -58,22 +58,22 @@ CNNLSTM.fit(x = X_train,
 
 | Arguments | Description | Shape |
 |:---|:----|:---|
-|x   | `ndarray` Training EEG signals.                  | `(#subjects x #trials, #EEGchannels, #timesteps, 1)`  |
-|y   | `ndarray` Class label of training set.           | `(#subjects x #trials,)`                              |
+|X_train   | `ndarray` Training EEG signals.                  | `(#subjects x #trials, #EEGchannels, #timesteps, 1)`  |
+|y_train   | `ndarray` Class label of training set.           | `(#subjects x #trials,)`                              |
 |validation_data    | `ndarray` Validation EEG signals     | X_val: `(#subjects x #trials, #EEGchannels, #timesteps, 1)`, y_val: `(#subjects x #trials,)` |
 |batch_size         | `int` or `None` Number of samples per gradient update.    | - |
 |epochs             | `int` Number of epochs to train the model.                | - |
-|**kwargs           | Keyword argument to pass into the function for replacing the variables of the model such as `loss`, `optimizer`, `metrics`| - | 
+|**kwargs           | Keyword argument to pass into the function for replacing the variables of the model such as `model_name`, `loss`, `optimizer`, `metrics`| - | 
 
 ---
 
-## Predict method
+### Predict method
 
 Return the output predictions and evaluation on samples in testing set *(X_test, y_test)*. This method is implemented based on [tf.keras.Model.predict()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#predict) and [tf.keras.Model.evaluate()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#evaluate)
 
 ```py
-CNNLSTM.evaluation( x = X_test, 
-                    y = y_test,
+CNNLSTM.evaluation( X_test, 
+                    y_test,
                     batch_size = batch_size)
 ```
  
@@ -95,7 +95,7 @@ CNNLSTM.evaluation( x = X_test,
 from EEGBBNet.model import CNNLSTM
 import numpy as np
 
-model = CNNLSTM(ip_shape=(5400, 62, 1000))
+model = CNNLSTM(ip_shape=(62, 1000, 1))
 model.fit(  X_train,
             y_train,
             validation_data=(X_val, y_val),
