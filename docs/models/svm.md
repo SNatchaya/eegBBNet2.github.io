@@ -46,8 +46,8 @@ SVM.fit(X_train,
 
 | Arguments | Description | Shape |
 |:---|:----|:---|
-|X_train   | `ndarray` Training EEG signals.        | `(*#subjects x #trials*, *#features*)` |
-|y_train   | `ndarray` Class label of training set. | `(*#subjects x #trials*,)`              |
+|X_train   | `ndarray` Training EEG signals.        | `(#subjects x #trials, #features)` |
+|y_train   | `ndarray` Class label of training set. | `(#subjects x #trials,)`              |
 
 ---
 
@@ -63,9 +63,15 @@ SVM.predict(X_test,
 
 | Arguments | Description | Shape |
 |:---|:----|:---|
-|X_test     | `ndarray` Testing EEG signals.            | `(*#subjetcs x #trials*, *#features*)` |
-|y_test     | `ndarray` Class labels of testing set.    | `(*#subjetcs x #trials*,)` |
-|**Return {y_pred,acc}** | `ndarray` **y_pred** : {Predicted label}, and **acc** : {Classification accuracy} for samples in X_test and y_test.    | `(*#Predicted labels*,)`, `1-value` |
+|X_test     | `ndarray` Testing EEG signals.            | `(#subjetcs x #trials, #features)`    |
+|y_test     | `ndarray` Class labels of testing set.    | `(#subjetcs x #trials,)`              |
+
+**Return** : *{y_pred, acc}* 
+
+| Arguments | Description | Shape |
+|:---|:---|:---|
+|y_pred | `ndarray` Predicted label of testing set.     | `(#Predicted labels,)`|
+|acc    | `ndarray` Classification accuracy of model.   | `1-value`             |
 
 ---
 
