@@ -36,7 +36,7 @@ EEGBBNet.model.RF()
 ---
 
 ### Fit method
-Fit the RF model according to the given training set *(X_train, y_train)*. 
+Fit the RF model according to the given training set `(X_train, y_train)`. 
 
 ```py
 SVM.fit(X_train,
@@ -45,7 +45,7 @@ SVM.fit(X_train,
 
 **Arguments**
 
-| Arguments | Description | Shape |
+| Arguments | Description | Dimensions |
 |:---|:----|:---|
 |X_train   | `ndarray` Training EEG signals.        | `(subject*trial, feature)`       |
 |y_train   | `ndarray` Class label of training set. | `(subject*trial, )`              |
@@ -53,7 +53,7 @@ SVM.fit(X_train,
 ---
 
 ### Predict method
-Return the output predictions and evaluation on samples in testing set *(X_test, y_test)*.
+Return the output predictions and evaluation on samples in testing set `(X_test, y_test)`.
 
 ```py
 RF.predict(X_test, 
@@ -62,7 +62,7 @@ RF.predict(X_test,
  
  **Arguments**
 
-| Arguments | Description | Shape |
+| Arguments | Description | Dimensions |
 |:---|:----|:---|
 |X_test     | `ndarray` Testing EEG signals.            | `(subjetc*trial, feature)`      |
 |y_test     | `ndarray` Class labels of testing set.    | `(subjetc*trial,)`              |
@@ -70,7 +70,7 @@ RF.predict(X_test,
 **Return** : *{y_pred, acc}* 
 
 | Arguments | Description |
-|:---|:---|:---|
+|:---|:---|
 |y_pred | `ndarray` Predicted label of testing set.     |
 |acc    | `int` Classification accuracy of model.       |
 

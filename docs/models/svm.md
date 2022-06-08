@@ -42,7 +42,7 @@ SVM.fit(X_train,
 
 **Arguments**
 
-| Arguments | Description | Shape |
+| Arguments | Description | Dimensions |
 |:---|:----|:---|
 |X_train   | `ndarray` Training EEG signals.        | `(subject*trial, feature)` |
 |y_train   | `ndarray` Class label of training set. | `(subject*trial, )`              |
@@ -50,7 +50,7 @@ SVM.fit(X_train,
 ---
 
 ### Predict method
-Return the output predictions and evaluation on samples in testing set *(X_test, y_test)*.
+Return the output predictions and evaluation on samples in testing set `(X_test, y_test)`.
 
 ```py
 SVM.predict(X_test, 
@@ -59,7 +59,7 @@ SVM.predict(X_test,
  
  **Arguments**
 
-| Arguments | Description | Shape |
+| Arguments | Description | Dimensions |
 |:---|:----|:---|
 |X_test     | `ndarray` Testing EEG signals.            | `(subjetc*trial, feature)`    |
 |y_test     | `ndarray` Class labels of testing set.    | `(subjetc*trial, )`              |

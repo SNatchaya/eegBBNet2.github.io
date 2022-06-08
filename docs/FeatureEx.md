@@ -2,7 +2,6 @@
 layout: default
 title: Feature Extractions
 nav_order: 3
-has_children: true
 ---
 
 # Feature Extractions
@@ -43,7 +42,7 @@ EEGBBNet.fe.PSD(data,
 **Return** : *{freq, psd}* 
 
 | Arguments | Description |
-|:---|:---|:---|
+|:---|:---|
 |freq   | `ndarray` Array of sample frequencies.        |
 |psd    | `ndarray` PSD or power spectrum of data.      |
 
@@ -70,7 +69,7 @@ The configuration of this mathod is shown below. This feature extraction method 
 
 ```py
 EEGBBNet.fe.AR(data,
-               order=order
+               order=order,
                enforce_stationarity=bool)
 ```
 
@@ -100,5 +99,3 @@ ar[subject, trial, EEGchannel] = AR(eeg[subject, trial, EEGchannel],
                                     order=(7,0,0),              # Auto Regressive with 7 order
                                     enforce_stationarity=False)
 ```
-
----

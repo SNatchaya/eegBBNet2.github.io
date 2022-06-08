@@ -44,7 +44,7 @@ CNN.build()
 ---
 
 ### Fit model
-Fit the CNN+LSTM model according to the given training set *(X_train, y_train)* and validation set *(X_val, y_val)*. This method is implemented based on [tf.keras.Model.fit()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit).
+Fit the CNN model according to the given training set `(X_train, y_train)` and validation set `(X_val, y_val)`. This method is implemented based on [tf.keras.Model.fit()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit).
 
 ```py
 CNNLSTM.fit(X_train,
@@ -56,7 +56,7 @@ CNNLSTM.fit(X_train,
 
 **Arguments**
 
-| Arguments | Description | Shape |
+| Arguments | Description | Dimensions |
 |:---|:----|:---|
 |X_train   | `ndarray` Training EEG signals.                  | `(subject*trial, EEGchannel, timestep, 1)`   |
 |y_train   | `ndarray` Class label of training set.           | `(subject*trial, )`                           |
@@ -69,7 +69,7 @@ CNNLSTM.fit(X_train,
 
 ### Predict method
 
-Return the output predictions and evaluation on samples in testing set *(X_test, y_test)*. This method is implemented based on [tf.keras.Model.predict()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#predict) and [tf.keras.Model.evaluate()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#evaluate)
+Return the output predictions and evaluation on samples in testing set `(X_test, y_test)`. This method is implemented based on [tf.keras.Model.predict()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#predict) and [tf.keras.Model.evaluate()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#evaluate)
 
 ```py
 CNNLSTM.evaluation(X_test, 
@@ -79,7 +79,7 @@ CNNLSTM.evaluation(X_test,
  
  **Arguments**
 
-| Arguments | Description | Shape |
+| Arguments | Description | Dimensions |
 |:---|:----|:---|
 |X_test     | `ndarray` Testing EEG signals.            | `(subject*trial, EEGchannel, timestep, 1)`  |
 |y_test     | `ndarray` Class labels of testing set.    | `(subject*trial, )`                          |

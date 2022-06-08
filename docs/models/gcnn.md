@@ -54,7 +54,7 @@ GCNN.build()
 ---
 
 ### Fit method
-Fit the GCNN model according to the given training set *(X_train, y_train)* and validation set *(X_val, y_val)*. This method is implemented based on [tf.keras.Model.fit()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit).
+Fit the CGCNN model according to the given training set `(X_train, y_train)` and validation set `(X_val, y_val)`. This method is implemented based on [tf.keras.Model.fit()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit).
 
 ```py
 GCNN.fit(X_train,
@@ -64,7 +64,7 @@ GCNN.fit(X_train,
 ```
 **Arguments**
 
-| Arguments | Description | Shape |
+| Arguments | Description | Dimensions |
 |:---|:----|:---|
 |X_train   | `ndarray` Training EEG signals.        | `xxx`        |
 |y_train   | `ndarray` Class label of training set. | `xxx`           |
@@ -72,7 +72,7 @@ GCNN.fit(X_train,
 ---
 
 ### Predict method
-Return the output predictions and evaluation on samples in testing set *(X_test, y_test)*. This method is implemented based on [tf.keras.Model.predict()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#predict) and [tf.keras.Model.evaluate()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#evaluate)
+Return the output predictions and evaluation on samples in testing set `(X_test, y_test)`. This method is implemented based on [tf.keras.Model.predict()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#predict) and [tf.keras.Model.evaluate()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#evaluate)
 
 ```py
 GCNN.evaluation(X_test, 
@@ -81,7 +81,7 @@ GCNN.evaluation(X_test,
 
  **Arguments**
 
-| Arguments | Description | Shape |
+| Arguments | Description | Dimensions |
 |:---|:----|:---|
 |X_test     | `ndarray` Testing EEG signals.            | `xxx`    |
 |y_test     | `ndarray` Class labels of testing set.    | `xxx`    |

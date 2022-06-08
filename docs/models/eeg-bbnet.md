@@ -44,6 +44,8 @@ EEGBBNet.build()
 
 ### Fit method
 
+Fit the EEGBBNet model according to the given training set `(X_train, y_train)` and validation set `(X_val, y_val)`.
+
 ```py
 EEGBBNet.fit(X_train,
              y_train,
@@ -53,12 +55,12 @@ EEGBBNet.fit(X_train,
 
 **Arguments**
 
-| Arguments | Description |
-|:---|:----|
-|X_train   | `ndarray` Training EEG signals. shape (*#trial*, *#depth*, *#time_point*, *#channel*) | 
-|y_train   | `ndarray` Label of training set. shape (*#trial*) |
-|X_val   | `ndarray` Validation EEG signals. shape (*#trial*, *#depth*, *#time_point*, *#channel*) |
-|y_val   | `ndarray` Label of validation set. shape (*#trial*) | 
+| Arguments | Description | Dimensions |
+|:---|:----|:---|
+|X_train   | `ndarray` Training EEG signals.                  | `(subject*trial, EEGchannel, timestep, 1)`  |
+|y_train   | `ndarray` Class label of training set.           | `(subject*trial, )`                         |
+|X_val     | `ndarray` Validation EEG signals.                | `(subject*trial, EEGchannel, timestep, 1)`  |
+|y_val     | `ndarray` Class label of validation set.         | `(subject*trial, )`                         |
 
 ---
 
@@ -70,10 +72,10 @@ EEGBBNet.predict(X_test,
  
  **Arguments**
 
-| Arguments | Description |
-|:---|:----|
-|X_test   | `ndarray` Testing EEG signals. shape (*#trial*, *#depth*, *#time_point*, *#channel*) | 
-|y_test   | `ndarray` Label of test set. shape (*#trial*) |
+| Arguments | Description | Dimensions |
+|:---|:----|:---|
+|X_test     | `ndarray` Testing EEG signals.            | `(subjetc*trial, feature)`    |
+|y_test     | `ndarray` Class labels of testing set.    | `(subjetc*trial, )`              |
 
 ---
 
