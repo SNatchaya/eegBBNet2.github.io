@@ -8,7 +8,7 @@ nav_order: 1
 # Support Vector Machine (SVM)
 {: .no_toc }
 
-[<img src="https://github.com/SNatchaya/eegBBNet2.github.io/blob/main/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
+[<img src="https://github.com/SNatchaya/eegBBNet2.github.io/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -28,14 +28,12 @@ EEGBBNet.model.SVM()
 
 | Arguments | Description | Default|
 |:----------|:------------|:-------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
+| random_state  | `int` RandomState instance.                   | *None*    |
 
 ---
 
 ### Fit method
-Fit the SVM model according to the given training data. 
+Fit the SVM model according to the given training set. 
 
 ```py
 SVM.fit(X_train,
@@ -52,7 +50,7 @@ SVM.fit(X_train,
 ---
 
 ### Predict method
-Return the output predictions and classification accuracy on samples in X_test.
+Return the output predictions and classification accuracy on samples in testing set.
 
 ```py
 SVM.predict(X_test, 
@@ -71,7 +69,7 @@ SVM.predict(X_test,
 | Arguments | Description | Shape |
 |:---|:---|:---|
 |y_pred | `ndarray` Predicted label of testing set.     | `(#Predicted labels,)`|
-|acc    | `ndarray` Classification accuracy of model.   | `1-value`             |
+|acc    | `int` Classification accuracy of model.       | `1-value`             |
 
 ---
 
