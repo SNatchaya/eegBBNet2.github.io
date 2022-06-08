@@ -8,7 +8,7 @@ nav_order: 1
 # Support Vector Machine (SVM)
 {: .no_toc }
 
-[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
+[<img src="https://github.com/SNatchaya/eegBBNet2.github.io/blob/main/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -44,10 +44,10 @@ SVM.fit(X_train,
 
 **Arguments**
 
-| Arguments | Description |
-|:---|:----|
-|X_train   | `ndarray` Training EEG signals, where shape: (*#trial*, *#features*) | 
-|y_train   | `ndarray` Class label of training set, where shape: (*#trial*) |
+| Arguments | Description | Shape |
+|:---|:----|:---|
+|X_train   | `ndarray` Training EEG signals.        | `(*#subjects x #trials*, *#features*)` |
+|y_train   | `ndarray` Class label of training set. | `(*#subjects x #trials*,)`              |
 
 ---
 
@@ -61,11 +61,12 @@ SVM.predict(X_test,
  
  **Arguments**
 
-| Arguments | Description |
-|:---|:----|
-|X_test     | `ndarray` Testing EEG signals, where shape: (*#trial*, *#features*)   | 
-|y_test     | `ndarray` Class labels of testing set, where shape (*#trial*)         |
-|**Return {y_pred,acc}** | `ndarray` **y_pred** : {Predicted label}, and **acc** : {Classification accuracy}| for samples in X_test and y_test    |
+| Arguments | Description | Shape |
+|:---|:----|:---|
+|X_test     | `ndarray` Testing EEG signals.            | `(*#subjetcs x #trials*, *#features*)` |
+|y_test     | `ndarray` Class labels of testing set.    | `(*#subjetcs x #trials*,)` |
+|**Return {y_pred,acc}** | `ndarray` **y_pred** : {Predicted label}, and **acc** : {Classification accuracy} for samples in X_test and y_test.    | `(*#Predicted labels*,)`, `1-value` |
+
 ---
 
 ## Example
