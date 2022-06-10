@@ -5,7 +5,8 @@ parent: Models
 nav_order: 1
 ---
 
-# Support Vector Machine (SVM)
+# SVM
+Support Vector Machine
 {: .no_toc }
 
 [<img src="https://min2net.github.io/assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
@@ -28,7 +29,7 @@ EEGBBNet.model.SVM()
 
 | Arguments | Description | Default|
 |:----------|:------------|:-------|
-| random_state  | `int` RandomState instance.                   | `None`    |
+| random_state  | `int` RandomState instance.                   | `42` |
 
 ---
 
@@ -53,8 +54,8 @@ SVM.fit(X_train,
 Return the output predictions and evaluation on samples in testing set `(X_test, y_test)`.
 
 ```py
-SVM.predict(X_test, 
-            y_test)
+SVM.evaluate(X_test, 
+             y_test)
 ```
  
  **Arguments**
@@ -64,7 +65,7 @@ SVM.predict(X_test,
 |X_test     | `ndarray` Testing EEG signals.            | `(subjetc*trial, feature)`    |
 |y_test     | `ndarray` Class labels of testing set.    | `(subjetc*trial, )`              |
 
-**Return** : *{y_pred, acc}* 
+**Returns** : *{y_pred, acc}* 
 
 | Arguments | Description |
 |:---|:---|
@@ -82,6 +83,6 @@ import numpy as np
 model = SVM()
 model.fit(X_train, 
           y_train)
-y_pred,acc = model.predict(X_test, 
-                           y_test)
+y_pred,acc = model.evaluate(X_test, 
+                            y_test)
 ```

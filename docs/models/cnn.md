@@ -5,7 +5,8 @@ parent: Models
 nav_order: 3
 ---
 
-# Convolution Neural Network (CNN)
+# CNN
+Convolutional Neural Network
 {: .no_toc }
 
 [<img src="https://min2net.github.io/assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
@@ -18,7 +19,7 @@ nav_order: 3
 
 ---
 
-## CNN+LSTM class
+## CNN class
 The configuration of this mathod is shown below. The implementation is based on [tf.keras.Model](https://www.tensorflow.org/api_docs/python/tf/keras/Model).
 
 ```py
@@ -26,9 +27,14 @@ EEGBBNet.model.CNN()
 ```
 **Arguments** 
 
-| Arguments | Description | Default|
+| Arguments | Description | Default |
 |:----------|:------------|:-------|
-| ip_shape  | `tuple` of integers. **Note** : The input shape depends on the data shape. | `(EEGchannel, timestep, 1)` |
+| input_shape   | `tuple` of integers.                              | `(62,1000,1)` |
+| num_class     | `int` Number of class.                            | `None` |
+| loss          | `str` Name of objective function. [objective function instance](https://www.tensorflow.org/api_docs/python/tf/keras/losses) | `sparse_categorical_crossentropy` |
+| optimizer     | `str` Name of optimizer. [optimizer instance](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers) | `Adam` |
+| use_bias      | `boolean` Whether the layer uses a bias vector    | `Ture`| 
+|**kwargs       | Keyword arguments to pass into the function for replacing the variables of the model such as `model_name`, `metrics` or `seed`| - | 
 
 ---
 
@@ -49,7 +55,8 @@ Fit the CNN model according to the given training set `(X_train, y_train)` and v
 ```py
 CNNLSTM.fit(X_train,
             y_train,
-            validation_data = (X_val, y_val),
+            X_val,
+            y_val,
             batch_size = batch_size,
             epochs = epochs)
 ```
@@ -58,23 +65,22 @@ CNNLSTM.fit(X_train,
 
 | Arguments | Description | Dimensions |
 |:---|:----|:---|
-|X_train   | `ndarray` Training EEG signals.                  | `(subject*trial, EEGchannel, timestep, 1)`   |
-|y_train   | `ndarray` Class label of training set.           | `(subject*trial, )`                           |
-|validation_data    | `ndarray` Validation EEG signals     | X_val: `(subject*trial, EEGchannel, timestep, 1)`, y_val: `(subject*trial, )` |
-|batch_size         | `int` or `None` Number of samples per gradient update.    | - |
-|epochs             | `int` Number of epochs to train the model.                | - |
-|**kwargs           | Keyword argument to pass into the function for replacing the variables of the model such as `model_name`,`loss`, `optimizer`, `metrics`| - | 
+|X_train   | `ndarray` Training EEG signals.              | `(subject*trial, EEGchannel, timestep, 1)`  |
+|y_train   | `ndarray` Class label of training set.       | `(subject*trial, )`                         |
+|X_val     | `ndarray` Validation EEG signals.            | `(subject*trial, EEGchannel, timestep, 1)`  |
+|y_val     | `ndarray` Class label of validation data.    | `(subject*trial, )`                         |
+|batch_size     | `int` or `None` Number of samples per gradient update.    | - |
+|epochs         | `int` Number of epochs to train the model.                | - |
 
 ---
 
-### Predict method
+### Evaluate method
 
 Return the output predictions and evaluation on samples in testing set `(X_test, y_test)`. This method is implemented based on [tf.keras.Model.predict()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#predict) and [tf.keras.Model.evaluate()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#evaluate)
 
 ```py
-CNNLSTM.evaluation(X_test, 
-                   y_test,
-                   batch_size = batch_size)
+CNN.evaluate(X_test, 
+             y_test)
 ```
  
  **Arguments**
@@ -82,10 +88,14 @@ CNNLSTM.evaluation(X_test,
 | Arguments | Description | Dimensions |
 |:---|:----|:---|
 |X_test     | `ndarray` Testing EEG signals.            | `(subject*trial, EEGchannel, timestep, 1)`  |
-|y_test     | `ndarray` Class labels of testing set.    | `(subject*trial, )`                          |
-|batch_size         | `int` or `None` Number of samples per batch of computation.     | - |
+|y_test     | `ndarray` Class labels of testing set.    | `(subject*trial, )`                         |
 
-**Return** : the loss value & metrics values for the model in test mode.
+**Returns** : The predicted label and evaluation for the model in test mode.
+
+| Returns | Description |
+|:---|:---|
+| y_pred        | `ndarray` the predicted label.        |
+| evaluation    | The dictionary of `{loss, accuracy}`  |
 
 ---
 
@@ -95,13 +105,13 @@ CNNLSTM.evaluation(X_test,
 from EEGBBNet.model import CNN
 import numpy as np
 
-model = CNN(ip_shape=(62, 1000, 1))
+model = CNN(input_shape=X_train[-1].shape, num_class=54)
 model.fit(X_train,
           y_train,
-          validation_data=(X_val, y_val),
+          X_val,
+          y_val,
           batch_size=32,
           epochs=100)
-y_pred, history = model.evaluation(X_test,
-                                   y_test,
-                                   batch_size=32)
+y_pred, evaluation = model.evaluate(X_test,
+                                    y_test)
 ```

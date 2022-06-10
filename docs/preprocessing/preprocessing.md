@@ -26,7 +26,7 @@ The OpenBMI dataset consists of 3 EEG recognition tasks, namely Motor Imagery (M
 Each dataset contains 54 healthy subjects, and each subject was recorded the EEG using a BrainAmp EEG amplifier equipped with 62 electrodes.
 
 ```
-Data sizes : (sessions × subjects × trials × EEGchannels × timesteps)
+Data sizes : (sessions, subjects, trials, EEGchannels, timesteps)
 ```
 
 **EEG recognition tasks**

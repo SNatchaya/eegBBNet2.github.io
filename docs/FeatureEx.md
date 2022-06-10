@@ -35,9 +35,9 @@ EEGBBNet.fe.PSD(data,
 | Arguments | Description | Default |
 |:----------|:------------|:-------|
 |data   | `ndarray` The time-series data.                           | `shape of data` |
-|fs     | `float` The sampling frequency of the *data* time-series. | `1.0` |
-|nperseg| `int` Length of each segment.                             | `256` |
-|return_onesided| `bool` If True, return a one-sided spectrum for real data. If False return a two-sided spectrum. |`True`|
+|fs     | `float` The sampling frequency of the *data* time-series. | `1000` |
+|nperseg| `int` Length of each segment.                             | `750` |
+|return_onesided| `boolean` If True, return a one-sided spectrum for real data. If False return a two-sided spectrum. | `False` |
 
 **Return** : *{freq, psd}* 
 
