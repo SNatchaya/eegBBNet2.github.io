@@ -423,8 +423,6 @@ function searchLoaded(index, docs) {
 
 // Switch theme
 
-const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-
 jtd.getTheme = function() {
   var cssFileHref = document.querySelector('[rel="stylesheet"]').getAttribute('href');
   return cssFileHref.substring(cssFileHref.lastIndexOf('-') + 1, cssFileHref.length - 4);
@@ -434,16 +432,6 @@ jtd.setTheme = function(theme) {
   var cssFile = document.querySelector('[rel="stylesheet"]');
   cssFile.setAttribute('href', 'http://localhost:4000/eegBBNet2.github.io/assets/css/just-the-docs-' + theme + '.css');
 }
-
-jtd.addEvent(toggleDarkMode, 'click', function(){
-  if (jtd.getTheme() === 'dark') {
-    jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Dark mode';
-  } else {
-    jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Light mode';
-  }
-});
 
 // Document ready
 
