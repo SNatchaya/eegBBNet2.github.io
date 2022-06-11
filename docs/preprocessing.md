@@ -11,22 +11,6 @@ Conduct the algorithm using OpenBMI EEG dataset, and analysis the datas in offli
 
 [<img src="https://min2net.github.io/assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .mr-1}
 
-<button type="button" name="button" class="btn js-toggle-dark-mode">Change theme</button>
-
-<script>
-const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-
-jtd.addEvent(toggleDarkMode, 'click', function(){
-  if (jtd.getTheme() === 'dark') {
-    jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Dark mode';
-  } else {
-    jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Light mode';
-  }
-});
-</script>
-
 ## Table of contents
 {: .no_toc .text-delta }
 
