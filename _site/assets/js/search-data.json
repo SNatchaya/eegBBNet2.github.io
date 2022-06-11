@@ -23,89 +23,89 @@
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/FeatureEx/#ar",
     "relUrl": "/docs/FeatureEx/#ar"
   },"4": {
-    "doc": "About",
-    "title": "About",
-    "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll . ",
-    "url": "http://localhost:4000/eegBBNet2.github.io/about/",
-    "relUrl": "/about/"
-  },"5": {
     "doc": "CNN + LSTM",
     "title": "CNN and LSTM",
     "content": "Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM). Source code on GitHub . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/cnn+lstm/#cnn-and-lstm",
     "relUrl": "/docs/models/cnn+lstm/#cnn-and-lstm"
-  },"6": {
+  },"5": {
     "doc": "CNN + LSTM",
     "title": "Table of contents",
     "content": ". | CNN and LSTM . | CNN+LSTM class . | Build model | Fit model | Evaluate method | . | Example | . | . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/cnn+lstm/#table-of-contents",
     "relUrl": "/docs/models/cnn+lstm/#table-of-contents"
-  },"7": {
+  },"6": {
     "doc": "CNN + LSTM",
     "title": "CNN+LSTM class",
     "content": "The configuration of this mathod is shown below. The implementation is based on tf.keras.Model. EEGBBNet.model.CNNLSTM() . Arguments . | Arguments | Description | Default | . | input_shape | tuple of integers. | (62,1000,1) | . | num_class | int Number of class. | None | . | loss | str Name of objective function. objective function instance | sparse_categorical_crossentropy | . | optimizer | str Name of optimizer. optimizer instance | Adam | . | use_bias | boolean Whether the layer uses a bias vector | Ture | . | **kwargs | Keyword arguments to pass into the function for replacing the variables of the model such as model_name, metrics or seed | - | . Build model . (?) Build the model that group layers into an object with training and inference features. CNNLSTM.build() . Return: Model (tf.keras.Model) : Model object . Fit model . Fit the CNN+LSTM model according to the given training set (X_train, y_train) and validation set (X_val, y_val). This method is implemented based on tf.keras.Model.fit(). CNNLSTM.fit(X_train, y_train, X_val, y_val, batch_size = batch_size, epochs = epochs) . Arguments . | Arguments | Description | Dimensions | . | X_train | ndarray Training EEG signals. | (subject*trial, EEGchannel, timestep, 1) | . | y_train | ndarray Class label of training set. | (subject*trial, ) | . | X_val | ndarray Validation EEG signals. | (subject*trial, EEGchannel, timestep, 1) | . | y_val | ndarray Class label of validation data. | (subject*trial, ) | . | batch_size | int or None Number of samples per gradient update. | - | . | epochs | int Number of epochs to train the model. | - | . Evaluate method . Return the output predictions and evaluation on samples in testing set (X_test, y_test). This method is implemented based on tf.keras.Model.predict() and tf.keras.Model.evaluate() . CNNLSTM.evaluate(X_test, y_test) . Arguments . | Arguments | Description | Dimensions | . | X_test | ndarray Testing EEG signals. | (subject*trial, EEGchannel, timestep, 1) | . | y_test | ndarray Class labels of testing set. | (subject*trial, ) | . Returns : The predicted label and evaluation for the model in test mode. | Returns | Description | . | y_pred | ndarray the predicted label. | . | evaluation | The dictionary of {loss, accuracy} | . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/cnn+lstm/#cnnlstm-class",
     "relUrl": "/docs/models/cnn+lstm/#cnnlstm-class"
-  },"8": {
+  },"7": {
     "doc": "CNN + LSTM",
     "title": "Example",
     "content": "from EEGBBNet.model import CNNLSTM import numpy as np model = CNN(input_shape=X_train[-1].shape, num_class=54) model.fit(X_train, y_train, X_val, y_val, batch_size=32, epochs=100) y_pred, evaluation = model.evaluate(X_test, y_test) . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/cnn+lstm/#example",
     "relUrl": "/docs/models/cnn+lstm/#example"
-  },"9": {
+  },"8": {
     "doc": "CNN + LSTM",
     "title": "CNN + LSTM",
     "content": " ",
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/cnn+lstm/",
     "relUrl": "/docs/models/cnn+lstm/"
-  },"10": {
+  },"9": {
     "doc": "CNN",
     "title": "CNN",
     "content": "Convolutional Neural Network . Source code on GitHub . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/cnn/",
     "relUrl": "/docs/models/cnn/"
-  },"11": {
+  },"10": {
     "doc": "CNN",
     "title": "Table of contents",
     "content": ". | CNN . | CNN class . | Build model | Fit model | Evaluate method | . | Example | . | . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/cnn/#table-of-contents",
     "relUrl": "/docs/models/cnn/#table-of-contents"
-  },"12": {
+  },"11": {
     "doc": "CNN",
     "title": "CNN class",
     "content": "The configuration of this mathod is shown below. The implementation is based on tf.keras.Model. EEGBBNet.model.CNN() . Arguments . | Arguments | Description | Default | . | input_shape | tuple of integers. | (62,1000,1) | . | num_class | int Number of class. | None | . | loss | str Name of objective function. objective function instance | sparse_categorical_crossentropy | . | optimizer | str Name of optimizer. optimizer instance | Adam | . | use_bias | boolean Whether the layer uses a bias vector | Ture | . | **kwargs | Keyword arguments to pass into the function for replacing the variables of the model such as model_name, metrics or seed | - | . Build model . (?) Build the model that group layers into an object with training and inference features. CNN.build() . Return: Model (tf.keras.Model) : Model object . Fit model . Fit the CNN model according to the given training set (X_train, y_train) and validation set (X_val, y_val). This method is implemented based on tf.keras.Model.fit(). CNNLSTM.fit(X_train, y_train, X_val, y_val, batch_size = batch_size, epochs = epochs) . Arguments . | Arguments | Description | Dimensions | . | X_train | ndarray Training EEG signals. | (subject*trial, EEGchannel, timestep, 1) | . | y_train | ndarray Class label of training set. | (subject*trial, ) | . | X_val | ndarray Validation EEG signals. | (subject*trial, EEGchannel, timestep, 1) | . | y_val | ndarray Class label of validation data. | (subject*trial, ) | . | batch_size | int or None Number of samples per gradient update. | - | . | epochs | int Number of epochs to train the model. | - | . Evaluate method . Return the output predictions and evaluation on samples in testing set (X_test, y_test). This method is implemented based on tf.keras.Model.predict() and tf.keras.Model.evaluate() . CNN.evaluate(X_test, y_test) . Arguments . | Arguments | Description | Dimensions | . | X_test | ndarray Testing EEG signals. | (subject*trial, EEGchannel, timestep, 1) | . | y_test | ndarray Class labels of testing set. | (subject*trial, ) | . Returns : The predicted label and evaluation for the model in test mode. | Returns | Description | . | y_pred | ndarray the predicted label. | . | evaluation | The dictionary of {loss, accuracy} | . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/cnn/#cnn-class",
     "relUrl": "/docs/models/cnn/#cnn-class"
-  },"13": {
+  },"12": {
     "doc": "CNN",
     "title": "Example",
     "content": "from EEGBBNet.model import CNN import numpy as np model = CNN(input_shape=X_train[-1].shape, num_class=54) model.fit(X_train, y_train, X_val, y_val, batch_size=32, epochs=100) y_pred, evaluation = model.evaluate(X_test, y_test) . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/cnn/#example",
     "relUrl": "/docs/models/cnn/#example"
-  },"14": {
+  },"13": {
     "doc": "EEG-BBNet",
     "title": "EEG-BBNet",
     "content": "EEG-BBNet is comprised of CNN, GCN, and fully connected layers, sequentially. Source code on GitHub . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/eeg-bbnet/",
     "relUrl": "/docs/models/eeg-bbnet/"
-  },"15": {
+  },"14": {
     "doc": "EEG-BBNet",
     "title": "Table of contents",
     "content": ". | Model class . | Build method | Fit method | Predict method | . | Example | . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/eeg-bbnet/#table-of-contents",
     "relUrl": "/docs/models/eeg-bbnet/#table-of-contents"
-  },"16": {
+  },"15": {
     "doc": "EEG-BBNet",
     "title": "Model class",
     "content": "Configures the model for training. Based on tf.keras.Model. our library . Arguments . | Arguments | Description | Default | . | ok | good swedish fish | nice | . | out of stock | good and plenty | nice | . | ok | good oreos | hmm | . | ok | good zoute drop | yumm | . Build method . Build the model that …. EEGBBNet.build() . Fit method . Fit the EEGBBNet model according to the given training set (X_train, y_train) and validation set (X_val, y_val). EEGBBNet.fit(X_train, y_train, X_val, y_val) . Arguments . | Arguments | Description | Dimensions | . | X_train | ndarray Training EEG signals. | (subject*trial, EEGchannel, timestep, 1) | . | y_train | ndarray Class label of training set. | (subject*trial, ) | . | X_val | ndarray Validation EEG signals. | (subject*trial, EEGchannel, timestep, 1) | . | y_val | ndarray Class label of validation set. | (subject*trial, ) | . Predict method . EEGBBNet.predict(X_test, y_test) . Arguments . | Arguments | Description | Dimensions | . | X_test | ndarray Testing EEG signals. | (subjetc*trial, feature) | . | y_test | ndarray Class labels of testing set. | (subjetc*trial, ) | . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/eeg-bbnet/#model-class",
     "relUrl": "/docs/models/eeg-bbnet/#model-class"
-  },"17": {
+  },"16": {
     "doc": "EEG-BBNet",
     "title": "Example",
     "content": "from EEGBBNet.model import EEGBBNet import numpy as np model = EEGBBNet(input_shape=(1, 400, 20), num_class=2, monitor='val_loss', shuffle=True) model.fit(X_train, y_train, X_val, y_val) Y, evaluation = model.predict(X_test, y_test) . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/docs/models/eeg-bbnet/#example",
     "relUrl": "/docs/models/eeg-bbnet/#example"
+  },"17": {
+    "doc": "Examples",
+    "title": "Examples",
+    "content": ". This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll . ",
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/examples/",
+    "relUrl": "/docs/examples/"
   },"18": {
     "doc": "GCNN",
     "title": "GCNN",
@@ -164,32 +164,32 @@
     "doc": "Preprocessing",
     "title": "Prepocessing",
     "content": "Conduct the algorithm using OpenBMI EEG dataset, and analysis the datas in offline phase. Bandpass using Butterworth filter and downsample the signals. Source code on GitHub . ",
-    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/preprocessing/#prepocessing",
-    "relUrl": "/docs/preprocessing/preprocessing/#prepocessing"
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/#prepocessing",
+    "relUrl": "/docs/preprocessing/#prepocessing"
   },"28": {
     "doc": "Preprocessing",
     "title": "Table of contents",
     "content": ". | Prepocessing . | OpenBMI datasets . | Example | . | Pre-processing . | Example | . | . | . ",
-    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/preprocessing/#table-of-contents",
-    "relUrl": "/docs/preprocessing/preprocessing/#table-of-contents"
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/#table-of-contents",
+    "relUrl": "/docs/preprocessing/#table-of-contents"
   },"29": {
     "doc": "Preprocessing",
     "title": "OpenBMI datasets",
     "content": "The OpenBMI dataset consists of 3 EEG recognition tasks, namely Motor Imagery (MI), Steady-State Visually Evoked Potential (SSVEP), and Event-Related Potential (ERP). Each dataset contains 54 healthy subjects, and each subject was recorded the EEG using a BrainAmp EEG amplifier equipped with 62 electrodes. Data sizes : (sessions, subjects, trials, EEGchannels, timesteps) . EEG recognition tasks . | EEG tasks | Dimensions | . | MI | (2,54,100,62,1000) | . | SSVEP | (2,54,100,62,1000) | . | ERP | (2,54,100,62,200) | . For downloading the raw dataset. EEGBBNet.dataset.raw(eeg_task) . Arguments . | Arguments | Description | . | eeg_task | str Task name (e.g. MI, SSVEP, and ERP) | . Example . import EEGBBnet EEGBBNet.dataset.raw('MI') EEGBBNet.dataset.raw('SSVEP') EEGBBNet.dataset.raw('ERP') . ",
-    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/preprocessing/#openbmi-datasets",
-    "relUrl": "/docs/preprocessing/preprocessing/#openbmi-datasets"
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/#openbmi-datasets",
+    "relUrl": "/docs/preprocessing/#openbmi-datasets"
   },"30": {
     "doc": "Preprocessing",
     "title": "Pre-processing",
     "content": "Example . ",
-    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/preprocessing/#pre-processing",
-    "relUrl": "/docs/preprocessing/preprocessing/#pre-processing"
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/#pre-processing",
+    "relUrl": "/docs/preprocessing/#pre-processing"
   },"31": {
     "doc": "Preprocessing",
     "title": "Preprocessing",
     "content": " ",
-    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/preprocessing/",
-    "relUrl": "/docs/preprocessing/preprocessing/"
+    "url": "http://localhost:4000/eegBBNet2.github.io/docs/preprocessing/",
+    "relUrl": "/docs/preprocessing/"
   },"32": {
     "doc": "RF",
     "title": "RF",
