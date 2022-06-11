@@ -120,3 +120,13 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 
 # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
 color_scheme: dark
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+  # ignore:
+  #   envs: all

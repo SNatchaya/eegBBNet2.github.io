@@ -24,7 +24,7 @@ We propose a Python API and our algorithm for Brain-based biometrics, namely **E
 
 ## Getting started
 
-<button class="btn js-toggle-dark-mode">Preview dark color theme</button>
+<button type="button" name="button" class="btn js-toggle-dark-mode">Change theme</button>
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
@@ -38,7 +38,6 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
     toggleDarkMode.textContent = 'Light mode';
   }
 });
-
 </script>
 
 ### Dependencies
