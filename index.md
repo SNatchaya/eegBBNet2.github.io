@@ -24,6 +24,12 @@ We propose a Python API and our algorithm for Brain-based biometrics, namely **E
 
 ## Getting started
 
+<button class="btn js-toggle-dark-mode">Preview dark color theme</button>
+
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+</script>
+
 ### Dependencies
 
 <!-- - Python==3.6.9
