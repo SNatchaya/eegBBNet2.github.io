@@ -139,7 +139,7 @@
   },"23": {
     "doc": "Home",
     "title": "Getting started",
-    "content": "Dependencies . Preview dark color scheme . | Python == | tensorflow == | . | Create conda environment with dependencies $ xxx . | . Installation . | Using pip $ pip install xxx . | Using the released python wheel . | . Tutorial . Open code in Colab . Citation . Name . @ARTICLE{xxx} . Citation of our paper . ",
+    "content": "Dependencies . Dark mode . | Python == | tensorflow == | . | Create conda environment with dependencies $ xxx . | . Installation . | Using pip $ pip install xxx . | Using the released python wheel . | . Tutorial . Open code in Colab . Citation . Name . @ARTICLE{xxx} . Citation of our paper . ",
     "url": "http://localhost:4000/eegBBNet2.github.io/#getting-started",
     "relUrl": "/#getting-started"
   },"24": {

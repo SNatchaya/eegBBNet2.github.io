@@ -40,7 +40,7 @@ EEGBBNet.model.RF()
 Fit the RF model according to the given training set `(X_train, y_train)`. 
 
 ```py
-SVM.fit(X_train,
+RF.fit(X_train,
         y_train)
 ```
 
