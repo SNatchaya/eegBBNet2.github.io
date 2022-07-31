@@ -10,6 +10,17 @@ EEG-BBNet: Layer-Wise Graph Convolutional Neural Networks for Brain-Based Biomet
 
 We propose a Python API and our algorithm for Brain-based biometrics, namely **EEG-BBNet**. We illustrate the examples of benchmark datasets, preprocessing, feature extractions, and models, including our algorithm EEG-BBNet. Finally, the API was developed to allow for benchmarking the pipeline of our proposed algorithm and traditional brain-biometric models.
 
+### Citation:
+
+<!-- To cited [our paper](https://ieeexplore.ieee.org/document/9658165) -->
+
+Name
+
+```
+@ARTICLE{xxx}
+```
+To cited [our paper](xxx)
+
 - [Get started now](#getting-started)
 - [Source code on GitHub](xxx)
 - [Documentation](https://snatchaya.github.io/eegBBNet2.github.io/)
@@ -27,6 +38,7 @@ We propose a Python API and our algorithm for Brain-based biometrics, namely **E
 - wget>=3.2 -->
 - [x] Python ==
 - [x] tensorflow ==
+- [x] scikit-learn >= 
 
 1. Create `conda`  environment with dependencies
 ```bash
@@ -46,18 +58,6 @@ $ xxx
 ### Tutorial:
 
 [Open code in Colab](xxx)
-
-
-### Citation:
-
-<!-- To cited [our paper](https://ieeexplore.ieee.org/document/9658165) -->
-
-Name
-
-```
-@ARTICLE{xxx}
-```
-[Citation of our paper](xxx)
 
 ### Source code:
 

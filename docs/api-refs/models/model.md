@@ -1,14 +1,16 @@
 ---
 layout: default
 title: Models
-nav_order: 4
+parent: API reference
 has_children: true
-permalink: docs/models
+nav_order: 3
 ---
 
 # Models
 {: .fs-9 }
 EEG classification models, which have traditional brain-biometric models and our purpose models.
 
-
+```py
+EEGBBnet.models
+```
 

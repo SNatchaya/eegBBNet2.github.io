@@ -1,13 +1,15 @@
 ---
 layout: default
-title: CNN
+title: EEGBBnet.models.CNN
 parent: Models
+grand_parent: API reference
 nav_order: 3
 ---
 
 # CNN
-Convolutional Neural Network
 {: .no_toc }
+
+Convolutional Neural Network
 
 [<img src="https://min2net.github.io/assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
 
@@ -23,7 +25,7 @@ Convolutional Neural Network
 The configuration of this mathod is shown below. The implementation is based on [tf.keras.Model](https://www.tensorflow.org/api_docs/python/tf/keras/Model).
 
 ```py
-EEGBBNet.model.CNN()
+EEGBBNet.models.CNN()
 ```
 **Arguments** 
 
@@ -102,7 +104,7 @@ CNN.evaluate(X_test,
 ## Example
 
 ```py
-from EEGBBNet.model import CNN
+from EEGBBNet.models import CNN
 import numpy as np
 
 model = CNN(input_shape=X_train[-1].shape, num_class=54)

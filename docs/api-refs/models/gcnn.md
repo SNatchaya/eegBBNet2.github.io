@@ -1,13 +1,15 @@
 ---
 layout: default
-title: GCNN
+title: EEGBBnet.models.GCN
 parent: Models
+grand_parent: API reference
 nav_order: 5
 ---
 
-# GCNN
+# GCN
 {: .no_toc }
-This method is Graph Convolutional Neural Network from [this paper](https://ieeexplore.ieee.org/document/8716699). If you use the GCNN model in your research, please cite the following paper:
+
+This method is Graph Convolutional Neural Network from [this paper](https://ieeexplore.ieee.org/document/8716699). If you use the GCN model in your research, please cite the following paper:
 
 ```
 @ARTICLE{8716699,  
@@ -30,11 +32,11 @@ This method is Graph Convolutional Neural Network from [this paper](https://ieee
 
 ---
 
-## GCNN class
+## GCN class
 The configuration of this mathod is shown below. The implementation is based on [tf.keras.Model](https://www.tensorflow.org/api_docs/python/tf/keras/Model).
 
 ```py
-EEGBBNet.model.GCNN()
+EEGBBNet.models.GCN()
 ```
 **Arguments** 
 
@@ -48,16 +50,16 @@ EEGBBNet.model.GCNN()
 (?) Build the model that group layers into an object with training and inference features.
 
 ```py
-GCNN.build()
+GCN.build()
 ```
 
 ---
 
 ### Fit method
-Fit the CGCNN model according to the given training set `(X_train, y_train)` and validation set `(X_val, y_val)`. This method is implemented based on [tf.keras.Model.fit()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit).
+Fit the GCN model according to the given training set `(X_train, y_train)` and validation set `(X_val, y_val)`. This method is implemented based on [tf.keras.Model.fit()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit).
 
 ```py
-GCNN.fit(X_train,
+GCN.fit(X_train,
          y_train,
          x_val,
          y_val)
@@ -75,7 +77,7 @@ GCNN.fit(X_train,
 Return the output predictions and evaluation on samples in testing set `(X_test, y_test)`. This method is implemented based on [tf.keras.Model.predict()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#predict) and [tf.keras.Model.evaluate()](https://www.tensorflow.org/api_docs/python/tf/keras/Model#evaluate)
 
 ```py
-GCNN.evaluation(X_test, 
+GCN.evaluation(X_test, 
                 y_test)
 ```
 
@@ -93,10 +95,10 @@ GCNN.evaluation(X_test,
 ## Example
 
 ```py
-from EEGBBNet.model import GCNN
+from EEGBBNet.models import GCN
 import numpy as np
 
-model = GCNN(input_shape=(x, y, z), 
+model = GCN(input_shape=(x, y, z), 
              num_class=2, 
              monitor='val_loss', 
              shuffle=True)

@@ -18,32 +18,29 @@ Layer-Wise Graph Convolutional Neural Networks for Brain-Based Biometrics
 
 We propose a Python API and our algorithm for Brain-based biometrics, namely **EEG-BBNet**. We illustrate the examples of benchmark datasets, preprocessing, feature extractions, and models, including our algorithm EEG-BBNet. Finally, the API was developed to allow for benchmarking the pipeline of our proposed algorithm and traditional brain-biometric models.
 
-[Get started now](#getting-started){: .btn .btn-purple .fs-5 .mb-4 .mb-md-0 .mr-2}[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .fs-5 .mb-4 .mb-md-0 .mr-1} [Documentation](https://snatchaya.github.io/eegBBNet2.github.io/){: .btn .fs-5 .mb-4 .mb-md-0} 
+(Figure: The overview of EEG-BBNet)
+
+### Citation
+
+<!-- To cited [our paper](https://ieeexplore.ieee.org/document/9658165) -->
+
+Name
+
+```
+@ARTICLE{xxx}
+```
+<span class="fs-3">
+[To cited our paper](xxx){: .btn }
+</span>
+
+[Get started now](#getting-started){: .btn .btn-purple .fs-5 .mb-4 .mb-md-0 .mr-2}[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .fs-5 .mb-4 .mb-md-0 .mr-1} [Bug reports](https://github.com/SNatchaya/eegBBNet2.github.io/issues){: .btn .fs-5 .mb-4 .mb-md-0} 
 
 ---
 
 ## Getting started
 
-<!-- <button class="btn js-toggle-dark-mode">Dark mode</button> -->
-
-
 ### Dependencies
 
-<button class="btn js-toggle-dark-mode">Dark mode</button>
-
-<script>
-const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-
-jtd.addEvent(toggleDarkMode, 'click', function(){
-  if (jtd.getTheme() === 'dark') {
-    jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Dark mode';
-  } else {
-    jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Light mode';
-  }
-});
-</script>
 
 <!-- - Python==3.6.9
 - tensorflow-gpu==2.2.0
@@ -52,6 +49,7 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 - wget>=3.2 -->
 - [x] Python ==
 - [x] tensorflow ==
+- [x] scikit-learn >= 
 
 1. Create `conda`  environment with dependencies
 ```bash
@@ -74,20 +72,6 @@ $ xxx
 [<img src="./images/colab_favicon.ico" width="15" height="15"> Open code in Colab](xxx){: .btn }
 </span>
 
-
-### Citation
-
-<!-- To cited [our paper](https://ieeexplore.ieee.org/document/9658165) -->
-
-Name
-
-```
-@ARTICLE{xxx}
-```
-<span class="fs-3">
-[Citation of our paper](xxx){: .btn }
-</span>
-
 ---
 
 ## About the project
@@ -97,4 +81,4 @@ Copyright &copy; 2021-All rights reserved by [INTERFACES (BRAIN lab @ IST, VISTE
 ### License
 Distributed by an [Apache License 2.0](https://github.com/IoBT-VISTEC/MIN2Net/blob/main/LICENSE).
 
-[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .mb-4 .mb-md-0 .mr-1}[Bug reports](https://github.com/SNatchaya/eegBBNet2.github.io/issues){: .btn }
+[<img src="./images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn .mb-4 .mb-md-0 .mr-1}

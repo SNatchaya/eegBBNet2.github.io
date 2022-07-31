@@ -1,13 +1,15 @@
 ---
 layout: default
-title: SVM
+title: EEGBBnet.models.SVM
 parent: Models
+grand_parent: API reference
 nav_order: 1
 ---
 
 # SVM
-Support Vector Machine
 {: .no_toc }
+
+Support Vector Machine
 
 [<img src="https://min2net.github.io/assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
 
@@ -23,7 +25,7 @@ Support Vector Machine
 The configuration of this mathod is shown below. The implementation is based on [sklearn.svm.SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html).
 
 ```py
-EEGBBNet.model.SVM()
+EEGBBNet.models.SVM()
 ```
 **Arguments** 
 
@@ -77,7 +79,7 @@ SVM.evaluate(X_test,
 ## Example
 
 ```py
-from EEGBBNet.model import SVM
+from EEGBBNet.models import SVM
 import numpy as np
 
 model = SVM()

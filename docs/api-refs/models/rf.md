@@ -1,13 +1,15 @@
 ---
 layout: default
-title: RF
+title: EEGBBnet.models.RF
 parent: Models
+grand_parent: API reference
 nav_order: 2
 ---
 
 # RF
-Random Forest
 {: .no_toc }
+
+Random Forest
 
 [<img src="https://min2net.github.io/assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
 
@@ -23,7 +25,7 @@ Random Forest
 The configuration of this mathod is shown below. The implementation is based on [sklearn.ensemble.RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html).
 
 ```py
-EEGBBNet.model.RF()
+EEGBBNet.models.RF()
 ```
 **Arguments** 
 
@@ -80,7 +82,7 @@ RF.evaluate(X_test,
 ## Example
 
 ```py
-from EEGBBNet.model import RF
+from EEGBBNet.models import RF
 import numpy as np
 
 model = RF()

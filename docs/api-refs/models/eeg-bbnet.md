@@ -1,7 +1,8 @@
 ---
 layout: default
-title: EEG-BBNet
+title: EEGBBnet.models.EEGBBnet
 parent: Models
+grand_parent: API reference
 nav_order: 6
 ---
 
@@ -23,7 +24,7 @@ nav_order: 6
 Configures the model for training. Based on [tf.keras.Model](https://www.tensorflow.org/api_docs/python/tf/keras/Model).
 
 ```py
-our library
+EEGBBnet.models.EEGBBnet()
 ```
 **Arguments** 
 

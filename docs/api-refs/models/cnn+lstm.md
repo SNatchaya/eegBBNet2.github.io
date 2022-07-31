@@ -1,13 +1,15 @@
 ---
 layout: default
-title: CNN + LSTM
+title: EEGBBnet.models.CNNLSTM
 parent: Models
+grand_parent: API reference
 nav_order: 4
 ---
 
 # CNN and LSTM
-Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM).
 {: .no_toc }
+
+Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM).
 
 [<img src="https://min2net.github.io/assets/images/github.png" width="15" height="15"> Source code on GitHub](xxx){: .btn}
 
@@ -23,7 +25,7 @@ Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM).
 The configuration of this mathod is shown below. The implementation is based on [tf.keras.Model](https://www.tensorflow.org/api_docs/python/tf/keras/Model).
 
 ```py
-EEGBBNet.model.CNNLSTM()
+EEGBBNet.models.CNNLSTM()
 ```
 **Arguments** 
 
@@ -102,10 +104,10 @@ CNNLSTM.evaluate(X_test,
 ## Example
 
 ```py
-from EEGBBNet.model import CNNLSTM
+from EEGBBNet.models import CNNLSTM
 import numpy as np
 
-model = CNN(input_shape=X_train[-1].shape, num_class=54)
+model = CNNLSTM(input_shape=X_train[-1].shape, num_class=54)
 model.fit(X_train,
           y_train,
           X_val,
